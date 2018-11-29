@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="test.JDCAppMedica.MenuPrincipalPaciente"
+    android:background="#f9f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView19"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BIENVENIDO PACIENTE"
+                android:id="@+id/textView6"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#060202"
+                android:textSize="23dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewNombrePaciente"
+                android:layout_below="@+id/textView6"
+                android:layout_alignRight="@+id/textView6"
+                android:textSize="23dp"
+                android:textColor="#0a0eef"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MIS DOCTORES"
+                android:id="@+id/buttonBuscarHistoria"
+                android:layout_alignTop="@+id/textViewNombrePaciente"
+                android:layout_alignParentLeft="true"
+                android:textSize="23dp"
+                android:background="#10f442"
+                android:textColor="#0a0ef4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:id="@+id/buttonVollverPaciente"
+                android:layout_below="@+id/buttonBuscarHistoria"
+                android:layout_alignRight="@+id/buttonBuscarHistoria"
+                android:textSize="23dp"
+                android:background="#f40b0b"
+                android:textColor="#f9f5f5" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView9"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView4"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/tablaPacienteHistorialMedico"></TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

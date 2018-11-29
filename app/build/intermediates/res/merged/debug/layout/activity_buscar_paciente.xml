@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="test.JDCAppMedica.BuscarPaciente"
+    android:background="#f9f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/scrollView6"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Buscar paciente"
+                android:id="@+id/textView4"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#f11212" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="nombre paciente  "
+                android:id="@+id/textView5"
+                android:textColor="#0f0fed"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText_nombre_pac" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR"
+                android:id="@+id/buttonBuscarPaciente"
+                android:layout_below="@+id/scrollView6"
+                android:layout_alignParentLeft="true"
+                android:onClick="botonBuscarPaciente"
+                android:textSize="23dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:id="@+id/button3"
+                android:layout_below="@+id/buttonBuscarPaciente"
+                android:layout_alignRight="@+id/buttonBuscarPaciente"
+                android:textSize="23dp"
+                android:background="#10f442" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/horizontalScrollView3"
+                android:layout_below="@+id/scrollView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="16dp" >
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/scrollView7"
+                    android:layout_alignTop="@+id/horizontalScrollView3"
+                    android:layout_alignParentLeft="true" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_below="@+id/horizontalScrollView3"
+                        android:layout_toRightOf="@+id/horizontalScrollView3"
+                        android:layout_marginLeft="74dp"
+                        android:id="@+id/tablaBDBuscarPaciente"></TableLayout>
+                </ScrollView>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

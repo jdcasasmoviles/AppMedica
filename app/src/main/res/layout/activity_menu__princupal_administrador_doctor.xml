@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipalAdministradorDoctor"
+    android:background="#f9f5f5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BIENVENIDO ADMINISTRADOR"
+        android:id="@+id/textView8"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0b0202" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textViewnombreAdministrador"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#0a0eef" />
+
+    <Button
+        android:id="@+id/buttonInsertarBD"
+        android:layout_width="267dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="AGREGAR DOCTOR"
+        android:textSize="23dp"
+        android:background="#10f442"
+        android:textColor="#0a0ef4" />
+
+    <Button
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:text="VOLVER"
+        android:id="@+id/buttonVolverDoctor"
+        android:layout_gravity="center_horizontal"
+        android:textSize="23dp"
+        android:background="#f40b0b"
+        android:textColor="#f9f5f5" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:fillViewport="false">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:id="@+id/verticalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TableLayout
+                    android:id="@+id/tablaBD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp">
+                </TableLayout>
+            </ScrollView>
+        </HorizontalScrollView>
+    </ScrollView>
+
+</LinearLayout>

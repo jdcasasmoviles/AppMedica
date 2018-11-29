@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="test.JDCAppMedica.MisPacientes"
+    android:background="#f9f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView17"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="#f9f5f5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/linearLayout"
+            android:layout_alignTop="@+id/scrollView17"
+            android:layout_alignParentLeft="true"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="PACIENTES DEL DOCTOR"
+                android:id="@+id/textView13"
+                android:textColor="#060101"
+                android:textSize="23dp"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView14"
+                android:layout_below="@+id/textView13"
+                android:layout_alignRight="@+id/textView13"
+                android:gravity="center"
+                android:textColor="#0a0eef" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:id="@+id/button5"
+                android:layout_below="@+id/textView14"
+                android:textSize="23dp"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:background="#ef0b0b"
+                android:layout_weight="0.51" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView15"
+                android:layout_alignTop="@+id/scrollView14"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="129dp" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView7"
+                    android:layout_alignTop="@+id/scrollView15"
+                    android:layout_toRightOf="@+id/scrollView15" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignTop="@+id/scrollView15"
+                        android:layout_toRightOf="@+id/scrollView15"
+                        android:id="@+id/TablaMisPacientes"></TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

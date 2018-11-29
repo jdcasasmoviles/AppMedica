@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="test.JDCAppMedica.MenuPrincipalAdministradorPaciente"
+    android:background="#f9f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="#f9f5f5">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BIENVENIDO ADMINISTRADOR"
+                android:id="@+id/textView9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:textColor="#080202" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView10"
+                android:layout_below="@+id/textView9"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:textSize="23dp"
+                android:textColor="#0a0eef" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGREGAR PACIENTE"
+                android:id="@+id/buttonAgregarPacienteAdministrador"
+                android:layout_below="@+id/textView10"
+                android:layout_toRightOf="@+id/textView10"
+                android:textColor="#0a0ef4"
+                android:background="#14f023"
+                android:textSize="23dp"
+                android:gravity="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:id="@+id/button4Volver"
+                android:layout_below="@+id/buttonAgregarPacienteAdministrador"
+                android:layout_alignParentLeft="true"
+                android:textColor="#0a0ef4"
+                android:textSize="23dp"
+                android:gravity="center" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView10"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/textView10" >
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/horizontalScrollView5"
+                    android:layout_alignBottom="@+id/scrollView10"
+                    android:layout_toRightOf="@+id/scrollView10" >
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_above="@+id/scrollView10"
+                        android:layout_toRightOf="@+id/button4Volver"
+                        android:id="@+id/tablaBDPacienteAdministrador"></TableLayout>
+                </HorizontalScrollView>
+            </ScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

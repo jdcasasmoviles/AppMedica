@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MenuPrincipalDoctor"
+    android:background="#f9f5f5">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView16" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="BIENVENIDO DOCTOR"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#060101" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textViewNombreDoctor"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0eef" />
+
+            <Button
+                android:id="@+id/buttonInsertarTablaHistoria"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:textSize="23dp"
+                android:text="AGREGAR HISTORIA"
+                android:background="#10f442"
+                android:textColor="#0a0ef4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR HISTORIA"
+                android:id="@+id/buttonBuscarHistoria"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#0a0ef4"
+                android:textSize="23dp"
+                android:background="#10f442" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGREGAR PACIENTE"
+                android:id="@+id/button8"
+                android:layout_gravity="center_horizontal"
+                android:background="#10f442"
+                android:textColor="#ffffff"
+                android:textSize="23dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MIS PACIENTES"
+                android:id="@+id/buttonMisPacientes"
+                android:layout_gravity="center_horizontal"
+                android:textSize="23dp"
+                android:textColor="#f4f4fa"
+                android:background="#10f442" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BUSCAR PACIENTE"
+                android:id="@+id/buttonBuscarPaciente"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#ffffff"
+                android:background="#1250ec"
+                android:textSize="23dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VOLVER"
+                android:id="@+id/buttonVolverHistoria"
+                android:layout_gravity="center_horizontal"
+                android:textSize="23dp"
+                android:background="#f40b0b"
+                android:textColor="#f9f5f5" />
+
+            <TableLayout
+                android:id="@+id/tablaBDHistoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp" >
+
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

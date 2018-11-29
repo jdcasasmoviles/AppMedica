@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\edittext_rounded_corners.xml",
+        "source": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\src\\main\\res\\drawable-ldpi\\edittext_rounded_corners.xml"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\android.png",
+        "source": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\src\\main\\res\\drawable-ldpi\\android.png"
+    },
+    {
+        "merged": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi-v4\\icon.png",
+        "source": "C:\\Users\\Usuario\\AndroidStudioProjects\\AppMedica\\app\\src\\main\\res\\drawable-ldpi\\icon.png"
+    }
+]
